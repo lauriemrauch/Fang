@@ -1179,64 +1179,28 @@ h2.entry-title{
 	margin-right:0;
 }
 
-#secondary .widget{
-    float: left;
-    margin-bottom: 3.5em;
-    margin-right: 5%;
-    position: relative;
-    width: 30%;
-	padding:0;
-}
-#secondary .widget:nth-child(3n) {
-    margin-right:0;   
-}
-#secondary .widget:nth-child(3n+1) {
-    clear:both;   
-}
-#secondary .widget ul,
+
 #colophon .widget ul{
 	list-style-type: none;
 	margin:0;
 	padding:0;
 }
-#secondary .widget li,
 #colophon .widget li{
 	margin-bottom:5px;
 	padding-bottom:5px;
 }
-#secondary .widget li{
-	border-bottom:1px solid #AFB4BB;
-}
+
 #colophon .widget li{
 	border-bottom:1px solid #666666;
 }
-#secondary .widget li li,
-#secondary .widget li .children li,
 #colophon .widget li li,
 #colophon .widget li .children li{
 	border-bottom:none;
 	margin:0 0 0 1em;
 	padding:0;
 }
-#secondary .widget a{
-	/*color:#AFB4BB;*/
-    color:#121315;
-    text-decoration:none;
-}
-#secondary .widget a:hover{
-	/*color:#212428;*/
-    color:#AFB4BB;
-}
-#secondary #wp-calendar td{
-	color:#919393;
-}
 #colophon h3.widget-title{
 	color:#FFFFFF;
-}
-#secondary .about-link a{
-	color:#FFF;
-	text-decoration:none;
-	text-transform:uppercase;
 }
 
 .error404 .widget{
@@ -1460,6 +1424,7 @@ li.pingback {
 #colophon{
 	background-color:#444444;
 	color:#FFFFFF;	
+	padding: 20px 0;
 }
 #colophon a{
 	color:#C3C3C3;
@@ -1487,10 +1452,12 @@ li.pingback {
 }
 .copyright{
 	float:left;
+	margin:0;
 	width:45%;
 }
 .credits{
 	float:right;
+	margin:0;
 	text-align:right;
 	width:45%;
 }

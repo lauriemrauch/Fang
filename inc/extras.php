@@ -85,10 +85,14 @@ function search_title_highlight() {
  * Add a link to click through to the full post on the excerpt
  */
 
-function fang_excerpt_more( $more ) {
-	return '... <a class="tiplink" href="' . get_permalink() . '">' . __( 'Continue Reading', 'fang' ) . '</a> &raquo;';
-}
-add_filter('excerpt_more', 'fang_excerpt_more');
+if ( ! function_exists( 'fang_excerpt_more' ) ) :
+
+	function fang_excerpt_more( $more ) {
+		return '... <a class="tiplink" href="' . get_permalink() . '">' . __( 'Continue Reading', 'fang' ) . '</a> &raquo;';
+	}
+	add_filter('excerpt_more', 'fang_excerpt_more');
+
+endif;
 
 /**
  * Change the read more link
